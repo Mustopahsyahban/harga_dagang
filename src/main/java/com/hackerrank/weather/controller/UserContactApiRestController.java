@@ -1,5 +1,6 @@
 package com.hackerrank.weather.controller;
 
+import com.hackerrank.weather.dto.UserContactDTO;
 import com.hackerrank.weather.entity.UserContactEntity;
 import com.hackerrank.weather.entity.UserEntity;
 import com.hackerrank.weather.service.UserContactService;
@@ -20,7 +21,7 @@ public class UserContactApiRestController {
 
         @GetMapping("")
         public ResponseEntity<?> index() {
-            List<UserContactEntity> list = userContactService.fineAll();
+            List<UserContactDTO> list = userContactService.fineAll();
             return ResponseEntity.status(HttpStatus.OK).body(list);
         }
 }

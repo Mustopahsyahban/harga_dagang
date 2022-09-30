@@ -14,8 +14,8 @@ public class UserContactEntity {
     @Column(name = "id")
    @Getter @Setter private String id;
 
-    @Column(name = "user_code")
-    @Getter @Setter private String userCode;
+//    @Column(name = "user_code")
+//    @Getter @Setter private String userCode;
 
     @OneToOne
     @JoinColumn(name = "user_code", insertable = false,updatable = false)

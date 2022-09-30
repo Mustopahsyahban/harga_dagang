@@ -19,7 +19,7 @@ public class UserContactEntity {
 
     @OneToOne
     @JoinColumn(name = "user_code", insertable = false,updatable = false)
-    @Getter @Setter private UserEntity userEntity;
+    @Getter @Setter private UserEntity user;
 
     @Column(name = "address")
     @Getter @Setter private String address;

@@ -25,9 +25,5 @@ public class UserContactEntity {
     @Getter @Setter private String address;
 
 
-    public UserContactEntity(String id, String userCode, String address) {
-        this.id = id;
-        this.userCode = userCode;
-        this.address = address;
-    }
+
 }

@@ -21,7 +21,7 @@ public class UserContactApiRestController {
 
         @GetMapping("")
         public ResponseEntity<?> index() {
-            List<UserContactDTO> list = userContactService.fineAll();
+            List<UserContactEntity> list = userContactService.fineAll();
             return ResponseEntity.status(HttpStatus.OK).body(list);
         }
 }

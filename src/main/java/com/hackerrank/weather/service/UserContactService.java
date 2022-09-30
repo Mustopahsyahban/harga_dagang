@@ -14,9 +14,9 @@ public class UserContactService {
     @Autowired
     UserContactRepository userContactRepository;
 
-    public List<UserContactDTO> fineAll() {
-        List<UserContactDTO> result;
-        result = userContactRepository.findAllData();
+    public List<UserContactEntity> fineAll() {
+        List<UserContactEntity> result;
+        result = userContactRepository.findAll();
         return result;
     }
 
